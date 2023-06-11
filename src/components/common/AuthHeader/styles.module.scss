@@ -1,0 +1,56 @@
+.header {
+    height: 81px;
+    background: rgba(230, 0, 124, 0.7);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    @media (max-width: 575px) {
+        background: transparent;
+    }
+    justify-content: center;
+    align-items: center;
+    .headerContent {
+        @media (max-width: 575px) {
+            justify-content: center !important;
+        }
+        img {
+            cursor: pointer;
+            @media (max-width: 575px) {
+                padding-top: 20px;
+            }
+        }
+        .HeaderLogIn {
+            @media (max-width: 575px) {
+                display: none;
+            }
+            color: #ffffff;
+            margin-right: 12px;
+            font-family: 'poppins';
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .HeaderSignUp {
+            @media (max-width: 575px) {
+                display: none;
+            }
+            width: 96px;
+            height: 39px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #fedb32;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #fedb32;
+            font-weight: 500;
+            font-family: 'Roboto';
+            &:hover {
+                text-decoration: none;
+                background-color: #fedb32;
+                color: #000000;
+            }
+        }
+    }
+}

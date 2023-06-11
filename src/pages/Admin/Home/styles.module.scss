@@ -1,0 +1,321 @@
+.mainHome {
+    // height: 100vh;
+    background: #f5f5f5;
+    .mainbars {
+        width: 100%;
+        min-height: 475px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bars {
+        width: 100%;
+        min-height: 475px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hide {
+        position: fixed;
+        top: -100%;
+        left: 57%;
+        @media (max-width: 767px) {
+            left: 50%;
+        }
+        transform: translate(-50%, 0);
+        z-index: 1000;
+    }
+    .show {
+        position: fixed;
+        top: 28px;
+        left: 57%;
+        @media (max-width: 767px) {
+            left: 50%;
+        }
+        transform: translate(-50%, 0);
+        z-index: 1000;
+    }
+    .alert {
+        width: 295px;
+        @media (max-width: 575px) {
+            width: 285px;
+        }
+        min-height: 80px;
+        background: #5ac68f;
+        border-radius: 8px;
+        transition: 0.4s;
+        padding-bottom: 18px;
+        h1 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'poppins';
+            padding: 18px 0 0 17px;
+        }
+        h2 {
+            color: #ffffff;
+            font-family: 'roboto';
+            font-weight: 500;
+            font-size: 14px;
+            padding: 4px 0 0 17px;
+        }
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 30px;
+        @media (max-width: '767px') {
+            font-size: 24px;
+        }
+        @media (max-width: '485px') {
+            font-size: 20px;
+        }
+        font-family: 'poppins';
+    }
+    .tabheader {
+        div {
+            div {
+                overflow-x: auto;
+            }
+        }
+        height: 53px;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        button {
+            height: 53px;
+            color: #252c32 !important;
+        }
+        button[aria-selected='true'] {
+            font-weight: 700 !important;
+        }
+    }
+    .tableImg {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .AllRecipt {
+        width: 100% !important;
+        overflow-x: scroll;
+        background: #ffffff;
+        position: relative;
+        div {
+            padding: 0 !important;
+        }
+        .noDataFound {
+            display: flex;
+            min-height: 240px;
+            justify-content: center;
+            align-items: center;
+            h4 {
+                font-size: 18px;
+                color: #252733;
+                font-family: 'poppins';
+                text-align: center;
+            }
+        }
+        table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-spacing: 0px;
+            thead {
+                background: #f9fafb;
+                display: table;
+                width: 100%;
+                tr {
+                    height: 44px;
+                    th {
+                        @media (max-width: '1200px') {
+                            min-width: 180px !important;
+                            &:nth-child(1) {
+                                min-width: 250px !important;
+                            }
+                            &:nth-child(2) {
+                                min-width: 240px !important;
+                            }
+                            &:nth-child(3) {
+                                min-width: 220px !important;
+                            }
+                            &:last-child {
+                                min-width: 100px !important;
+                            }
+                        }
+                        p {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            tbody {
+                width: 100%;
+                display: table;
+                tr {
+                    td {
+                        .scrollerName {
+                            width: 120px;
+                            overflow: auto;
+                            overflow-y: hidden;
+                            height: 45px;
+                            margin-top: -8px;
+                            scrollbar-width: none;
+                            &::-webkit-scrollbar {
+                                height: 1.3px;
+                            }
+                            &::-webkit-scrollbar-track {
+                                background: transparent; /* color of the tracking area */
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                background-color: rgb(238, 237, 237); /* color of the scroll thumb */
+                                border-radius: 20px; /* roundness of the scroll thumb */
+                                border: 0.2px solid rgb(238, 237, 237); /* creates padding around scroll thumb */
+                            }
+                        }
+                        .scroller {
+                            width: 160px;
+                            overflow: auto;
+                            overflow-y: hidden;
+                            height: 45px;
+                            margin-top: -8px;
+                            scrollbar-width: none;
+                            &::-webkit-scrollbar {
+                                height: 1.3px;
+                            }
+                            &::-webkit-scrollbar-track {
+                                background: transparent; /* color of the tracking area */
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                background-color: rgb(238, 237, 237); /* color of the scroll thumb */
+                                border-radius: 20px; /* roundness of the scroll thumb */
+                                border: 0.2px solid rgb(238, 237, 237); /* creates padding around scroll thumb */
+                            }
+                        }
+                        @media (max-width: '1200px') {
+                            min-width: 180px !important;
+                            &:nth-child(1) {
+                                min-width: 250px !important;
+                            }
+                            &:nth-child(2) {
+                                min-width: 240px !important;
+                            }
+                            &:nth-child(3) {
+                                min-width: 220px !important;
+                            }
+                            &:last-child {
+                                min-width: 100px !important;
+                            }
+                        }
+                        height: 72px;
+                        .tableAccept_First {
+                            width: 66px;
+                            height: 22px;
+                            border: none;
+                            color: #027a48;
+                            font-size: 12px;
+                            font-weight: 500;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            background: #ecfdf3;
+                            border-radius: 16px;
+                            margin-top: 5px;
+                        }
+                        .tableAccept_Sec {
+                            width: 80px;
+                            height: 22px;
+                            border: none;
+                            color: #027a48;
+                            font-size: 12px;
+                            font-weight: 500;
+                            font-family: 'Roboto';
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            background: #ecfdf3;
+                            border-radius: 16px;
+                            margin-top: 5px;
+                        }
+                        .tableReject {
+                            width: 66px;
+                            height: 22px;
+                            font-weight: 500;
+                            border: none;
+                            cursor: pointer;
+                            font-family: 'Roboto';
+                            color: #d31739;
+                            font-size: 12px;
+                            height: 22px;
+                            background: #ffefef;
+                            border-radius: 16px;
+                            margin-top: 5px;
+                        }
+                        .tableRejected {
+                            width: 70px;
+                            font-weight: 500;
+                            border: none;
+                            cursor: pointer;
+                            font-family: 'Roboto';
+                            color: #d31739;
+                            font-size: 12px;
+                            height: 22px;
+                            background: #ffefef;
+                            border-radius: 16px;
+                            margin-top: 5px;
+                        }
+                        .tablePending {
+                            width: 70px;
+                            font-weight: 500;
+                            border: none;
+                            cursor: pointer;
+                            font-family: 'Roboto';
+                            color: white;
+                            font-size: 12px;
+                            height: 22px;
+                            background: rgb(247, 168, 22);
+                            border-radius: 16px;
+                            margin-top: 5px;
+                        }
+                        .sendNft {
+                            width: 67px;
+                            height: 22px;
+                            font-weight: 500;
+                            background: #ffc9e6;
+                            cursor: pointer;
+                            border-radius: 4px;
+                            font-size: 12px;
+                            margin-left: 15px;
+                            font-family: 'Roboto';
+                            border: none;
+                            color: #e6007c;
+                            margin-top: 5px;
+                        }
+                        img {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                &:nth-child(odd) {
+                    background-color: #f9fafb;
+                }
+            }
+        }
+        .pagination {
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

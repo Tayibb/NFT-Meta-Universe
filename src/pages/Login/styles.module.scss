@@ -1,0 +1,219 @@
+.bars {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(136.37deg, #e6007c 0%, rgba(61, 29, 175, 0.7) 100%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login {
+    background: url('../../assets/images/login_bg.png') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    .hide {
+        position: fixed;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1000;
+    }
+    .show {
+        position: fixed;
+        top: 28px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1000;
+    }
+    .alert {
+        width: 295px;
+        @media (max-width: 575px) {
+            width: 285px;
+        }
+        min-height: 75px;
+        background: #5ac68f;
+        border-radius: 8px;
+        transition: 0.4s;
+        padding-bottom: 18px;
+        h1 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'poppins';
+            padding: 18px 0 0 17px;
+        }
+        h2 {
+            color: #ffffff;
+            font-family: 'roboto';
+            font-weight: 500;
+            font-size: 14px;
+            padding: 4px 0 0 17px;
+        }
+    }
+    .errorAlert {
+        width: 295px;
+        @media (max-width: 575px) {
+            width: 285px;
+        }
+        min-height: 75px;
+        background: #ef6057;
+        box-shadow: 0px 4px 4px rgba(107, 98, 98, 0.25);
+        border-radius: 8px;
+        transition: 0.4s;
+        padding-bottom: 18px;
+        h1 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'poppins';
+            padding: 18px 0 0 17px;
+        }
+        h2 {
+            color: #ffffff;
+            font-family: 'roboto';
+            font-weight: 500;
+            font-size: 14px;
+            padding: 4px 0 0 17px;
+        }
+    }
+    .loginBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: (calc(100vh - 152px));
+        position: relative;
+        .loginCard {
+            width: 453px;
+            @media (max-width: 575px) {
+                width: 368px;
+            }
+            min-height: 548px;
+            border-radius: 20px;
+            margin: 60px 0;
+            background: linear-gradient(136.37deg, rgba(230, 0, 124, 0.7) 0%, rgba(61, 29, 175, 0.7) 100%);
+            backdrop-filter: blur(10px);
+            padding-bottom: 35px;
+            .formErrors {
+                color: #fedc34 !important;
+                margin: 0 !important;
+                font-family: 'roboto';
+            }
+            h1 {
+                color: #ffffff;
+                font-size: 30px;
+                @media (max-width: 575px) {
+                    font-size: 24px;
+                }
+                font-family: 'poppins';
+                margin-top: 20px;
+                text-align: center;
+                padding-top: 25px;
+            }
+
+            label {
+                color: #ffffff;
+                font-family: 'roboto';
+                font-size: 14px;
+                span {
+                    color: #fedb32;
+                }
+            }
+            .loginInput {
+                height: 40px;
+                border: 1px solid #e1e1e1;
+                display: flex;
+                align-items: center;
+                margin-top: 2px;
+                justify-content: space-between;
+                border-radius: 4px;
+                form {
+                    input {
+                        width: 260px;
+                        border: 0;
+                        outline: 0;
+                        font-family: 'roboto';
+                        color: #e1e1e1;
+                        background-color: transparent;
+                        padding-left: 12px;
+                        &::placeholder {
+                            color: #e1e1e1;
+                        }
+                        &:-webkit-autofill,
+                        &:-webkit-autofill:hover,
+                        &:-webkit-autofill:focus {
+                            -webkit-text-fill-color: #e1e1e1 !important;
+                            -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+                            transition: background-color 5000s ease-in-out 0s !important;
+                        }
+                    }
+                }
+            }
+            .loginInput.goldenBorder {
+                border: 1px solid #fedc34;
+            }
+            .loginCheck {
+                margin-top: 13px;
+                display: flex;
+                justify-content: space-between;
+                h6 {
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-family: 'Roboto';
+                    margin-top: -6px;
+                }
+                .forgetPass {
+                    a {
+                        color: #ffffff;
+                        cursor: pointer;
+                        font-family: 'roboto';
+                    }
+                }
+            }
+            .loginSocial {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                img {
+                    cursor: pointer;
+                }
+            }
+            .loginBtn {
+                Button {
+                    width: 393px;
+                    @media (max-width: 575px) {
+                        width: 304px;
+                    }
+                    height: 39px;
+                    border: 1px solid #fedb32;
+                    border-radius: 59px;
+                    color: #fedb32;
+                    font-family: 'roboto';
+                    font-weight: 500;
+                    margin-top: 35px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #fedb32;
+                        color: #000000;
+                    }
+                }
+            }
+            .SignUp {
+                margin-top: 15px;
+                h5 {
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: 'roboto';
+                }
+                a {
+                    color: #fedb32;
+                    font-size: 14px;
+                    font-weight: 400;
+                    cursor: pointer;
+                    font-family: 'roboto';
+                }
+            }
+        }
+    }
+}

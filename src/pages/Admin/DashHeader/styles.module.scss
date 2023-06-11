@@ -1,0 +1,90 @@
+.wrapper {
+    position: relative;
+    .mainHeader {
+        background: #ffffff;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            color: #757d91;
+            font-size: 16px;
+            padding-left: 20px;
+        }
+        .roundWrapper {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            margin-right: 25px;
+            img {
+                width: 55px;
+                object-fit: cover;
+                object-position: center;
+                height: 55px;
+                border-radius: 50%;
+            }
+        }
+        .headerPopup {
+            .notifyWrapper {
+                position: relative;
+                .notifyIcon {
+                    font-size: 24px;
+                    color: #001136;
+                    margin-right: 20px;
+                }
+                .notifyCount {
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: -2px;
+                    right: 15px;
+                    background-color: #e6007c;
+                    h3 {
+                        color: #ffffff;
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    a {
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                        text-decoration: none !important;
+                        // h3 {
+                        //     color: #344054;
+                        //     font-size: 14px;
+                        //     font-weight: 400;
+                        //     font-family: 'poppins';
+                        //     padding-left: 7px;
+                        // }
+                    }
+                    .logOut {
+                        cursor: pointer;
+                        margin-top: 10px;
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                        text-decoration: none;
+                        h4 {
+                            color: #344054;
+                            font-size: 14px;
+                            font-weight: 400;
+                            font-family: 'poppins';
+                            padding-left: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

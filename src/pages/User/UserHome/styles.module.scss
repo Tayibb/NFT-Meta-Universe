@@ -1,0 +1,273 @@
+.mainHome {
+    // height: 100vh;
+    background: #f5f5f5;
+    .bars {
+        width: 100%;
+        min-height: 475px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 30px;
+        @media (max-width: '767px') {
+            font-size: 24px;
+        }
+        @media (max-width: '485px') {
+            font-size: 20px;
+        }
+        font-family: 'poppins';
+    }
+    .tabheader {
+        div {
+            div {
+                overflow-x: auto;
+            }
+        }
+        height: 53px;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        button {
+            height: 53px;
+        }
+    }
+    .tableImg {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .AllRecipt {
+        width: 100% !important;
+        overflow-x: scroll;
+        background: #ffffff;
+        position: relative;
+        .noDataFound {
+            display: flex;
+            min-height: 240px;
+            justify-content: center;
+            align-items: center;
+            h4 {
+                font-weight: 400;
+                font-size: 18px;
+                color: #252733;
+                font-family: 'poppins';
+                text-align: center;
+            }
+        }
+        div {
+            padding: 0 !important;
+        }
+        table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+            table-layout: fixed;
+            border-spacing: 0px;
+            thead {
+                background: #f9fafb;
+                display: table;
+                width: 100%;
+                tr {
+                    height: 44px;
+                    th {
+                        @media (max-width: '1280px') {
+                            min-width: 280px !important;
+                            &:nth-child(2) {
+                                min-width: 260px !important;
+                            }
+                            &:nth-child(3) {
+                                min-width: 220px !important;
+                            }
+                            &:nth-child(4) {
+                                min-width: 180px !important;
+                            }
+                            &:last-child {
+                                min-width: 100px !important;
+                            }
+                        }
+                        p {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            tbody {
+                width: 100%;
+                // table-layout: fixed;
+                display: table;
+                tr {
+                    td {
+                        .scroller {
+                            width: 180px;
+                            overflow: auto;
+                            overflow-y: hidden;
+                            height: 43px;
+                            margin-top: -8px;
+                            scrollbar-width: none;
+                            &::-webkit-scrollbar {
+                                width: 10px;
+                                height: 1.3px;
+                            }
+                            &::-webkit-scrollbar-track {
+                                background: transparent; /* color of the tracking area */
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                background-color: rgb(238, 237, 237); /* color of the scroll thumb */
+                                border-radius: 20px; /* roundness of the scroll thumb */
+                                border: 0.2px solid rgb(238, 237, 237); /* creates padding around scroll thumb */
+                            }
+                        }
+                        .scrollerName {
+                            width: 150px;
+                            overflow: auto;
+                            overflow-y: hidden;
+                            height: 43px;
+                            margin-top: -8px;
+                            scrollbar-width: none;
+                            &::-webkit-scrollbar {
+                                width: 10px;
+                                height: 1.3px;
+                            }
+                            &::-webkit-scrollbar-track {
+                                background: transparent; /* color of the tracking area */
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                background-color: rgb(238, 237, 237); /* color of the scroll thumb */
+                                border-radius: 20px; /* roundness of the scroll thumb */
+                                border: 0.2px solid rgb(238, 237, 237); /* creates padding around scroll thumb */
+                            }
+                        }
+                        @media (max-width: '1280px') {
+                            min-width: 280px !important;
+                            &:nth-child(2) {
+                                min-width: 260px !important;
+                            }
+                            &:nth-child(3) {
+                                min-width: 220px !important;
+                            }
+                            &:nth-child(4) {
+                                min-width: 180px !important;
+                            }
+                            &:last-child {
+                                min-width: 100px !important;
+                            }
+                        }
+                        min-height: 72px;
+                        .tableAccept_First {
+                            width: 66px;
+                            height: 22px;
+                            border: none;
+                            color: #027a48;
+                            font-size: 12px;
+                            font-weight: 500;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            background: #ecfdf3;
+                            border-radius: 16px;
+                            margin-top: 3px;
+                        }
+                        .tableAccept_Sec {
+                            width: 80px;
+                            height: 22px;
+                            border: none;
+                            color: #027a48;
+                            font-size: 12px;
+                            font-weight: 500;
+                            font-family: 'Roboto';
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            background: #ecfdf3;
+                            border-radius: 16px;
+                            margin-top: 3px;
+                        }
+                        .tableReject {
+                            width: 66px;
+                            height: 22px;
+                            font-weight: 500;
+                            border: none;
+                            cursor: pointer;
+                            font-family: 'Roboto';
+                            color: #d31739;
+                            font-size: 12px;
+                            height: 22px;
+                            background: #ffefef;
+                            border-radius: 16px;
+                            margin-top: 3px;
+                        }
+                        .tableRejected {
+                            width: 70px;
+                            font-weight: 500;
+                            border: none;
+                            cursor: pointer;
+                            font-family: 'Roboto';
+                            color: #d31739;
+                            font-size: 12px;
+                            height: 22px;
+                            background: #ffefef;
+                            border-radius: 16px;
+                            margin-top: 3px;
+                        }
+                        .tablePending {
+                            width: 70px;
+                            font-weight: 500;
+                            border: none;
+                            cursor: pointer;
+                            font-family: 'Roboto';
+                            color: white;
+                            font-size: 12px;
+                            height: 22px;
+                            background: rgb(247, 168, 22);
+                            border-radius: 16px;
+                            margin-top: 3px;
+                        }
+                        .sendNft {
+                            width: 67px;
+                            height: 22px;
+                            font-weight: 500;
+                            background: #ffc9e6;
+                            cursor: pointer;
+                            border-radius: 4px;
+                            font-size: 12px;
+                            margin-left: 20px;
+                            font-family: 'Roboto';
+                            border: none;
+                            color: #e6007c;
+                            margin-top: 3px;
+                        }
+                        img {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                &:nth-child(odd) {
+                    background-color: #f9fafb;
+                }
+            }
+        }
+        .pagination {
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+// .css-dux2wc-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+//     color: white !important;
+// }

@@ -1,0 +1,16 @@
+.footer {
+    height: 75px;
+    width: 100%;
+    background: rgba(230, 0, 124, 0.7);
+    @media (max-width: 575px) {
+        background: transparent;
+    }
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    .terms {
+        @media (max-width: 575px) {
+            display: none;
+        }
+    }
+}

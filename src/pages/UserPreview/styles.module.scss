@@ -1,0 +1,141 @@
+.preview {
+    h2 {
+        font-size: 30px;
+        @media (max-width: '767px') {
+            font-size: 24px;
+        }
+        @media (max-width: '485px') {
+            font-size: 20px;
+        }
+        font-family: 'poppins';
+        color: #252733;
+        padding-left: 12px;
+    }
+    img {
+        cursor: pointer;
+    }
+    .reciept {
+        background: #ffffff;
+        margin: 15px 20px 0 17px;
+        @media (max-width: '767px') {
+            margin-right: 17px;
+        }
+        .bars {
+            width: 100%;
+            min-height: 475px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .noDataFound {
+            display: flex;
+            width: 100%;
+            min-height: 270px;
+            justify-content: center;
+            align-items: center;
+            h4 {
+                font-weight: 400;
+                @media (max-width: '485px') {
+                    margin-right: 18.4px;
+                }
+                font-size: 18px;
+                color: #252733;
+                font-family: 'poppins';
+                text-align: center;
+            }
+        }
+        img {
+            @media (min-width: '1024px') and (max-width: '1266px') {
+                width: 240px;
+            }
+            @media (max-width: '485px') {
+                max-width: 100%;
+                height: auto;
+                padding-right: 20px;
+            }
+        }
+        .recieptContent {
+            h3 {
+                color: #252733;
+                font-size: 26px;
+                @media (max-width: '767px') {
+                    font-size: 24px;
+                }
+                @media (max-width: '485px') {
+                    font-size: 20px;
+                }
+                font-family: 'poppins';
+                padding: 0 20px 0 0;
+            }
+            h5 {
+                color: #aaaaaa;
+                font-size: 18px;
+                @media (max-width: '767px') {
+                    font-size: 16px;
+                }
+                font-weight: 500;
+                font-family: 'poppins';
+                padding-top: 5px;
+            }
+            h4 {
+                color: #252733;
+                font-size: 18px;
+                @media (max-width: '767px') {
+                    font-size: 16px;
+                }
+                font-weight: 400;
+                padding: 15px 25px 0 0;
+            }
+            .recieptBtn {
+                .recieptAccept {
+                    width: 201px;
+                    height: 50px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-family: 'poppins';
+                    background: #e6007c;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.modalForm {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0;
+    @media (max-width: '485px') {
+        margin-bottom: 5px;
+    }
+    padding-left: 15px;
+    width: 100%;
+    height: 46px;
+    outline-color: #d5d6d7 !important;
+    border: 2px solid #e6e8ec;
+    border-radius: 4px;
+}
+.receiptModal {
+    img {
+        height: 600px;
+        @media (max-width: '1199px') {
+            height: 500px;
+        }
+        @media (max-width: '1024px') {
+            height: 400px;
+        }
+        @media (max-width: '767px') {
+            height: 350px;
+        }
+        @media (max-width: '599px') {
+            height: 300px;
+        }
+        @media (max-width: '485px') {
+            height: 230px;
+        }
+        padding: 0 25px 35px 25px;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+}
